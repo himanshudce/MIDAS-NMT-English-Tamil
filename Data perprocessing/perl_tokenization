@@ -1,0 +1,1 @@
+for l in en ;do for f in data/*.$l; do perl tools/tokenizer.perl -a -no-escape -l $l -q  < $f > $f.atok; done; done
