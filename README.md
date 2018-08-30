@@ -1,4 +1,4 @@
-# MIDAS-NMT-English-tamil-Dataset
+# MIDAS-NMT-English-tamil
 This Repository contains parallel corpus of english to tamil Dataset
 =======================
 train - 183451
