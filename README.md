@@ -10,11 +10,16 @@ val - 1000
 
 Kindly cite the below paper if you use our dataset or source code.
 
-@inproceedings{jangid2018aspect,
+@inproceedings{choudhary2018neural,
+
  title={Neural Machine Translation for English-Tamil},
+
  author={Choudhary, Himanshu and Pathak, Aditya Kumar and Shah, Rajiv Ratn and Kumaraguru, Ponnurangam},
+
  booktitle={WMT in EMNLP 2018},
+
  year={2018}
+
 }
 
 
