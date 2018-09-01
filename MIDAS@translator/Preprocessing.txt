@@ -1,0 +1,40 @@
+creating vocab for training using BPE -
+
+1. Using OpenNMT-py - http://opennmt.net/OpenNMT-py/
+=================================
+
+
+2. Learning BPE.
+
+English
+============
+a.) tools/learn_bpe.py -s 25000 < finaldata/train.en > finaldata/BPE/bpe-codes.src
+
+Tamil
+============
+b.) tools/learn_bpe.py -s 25000 < finaldata/train.ta > finaldata/BPE2/bpe-codes.tgt
+
+
+3. Applying BPE.
+
+Source
+==================
+tools/apply_bpe.py -c finaldata/BPE/bpe-codes.src < finaldata/train.en > finaldata/BPE/train.src
+tools/apply_bpe.py -c finaldata/BPE2/bpe-codes.src < finaldata/val.en > finaldata/BPE/val.src
+tools/apply_bpe.py -c finaldata/BPE2/bpe-codes.src < finaldata/test.en > finaldata/BPE/test.src
+
+Target
+==================
+tools/apply_bpe.py -c finaldata/BPE/bpe-codes.tgt < finaldata/val.ta > finaldata/BPE2/val.tgt
+tools/apply_bpe.py -c finaldata/BPE/bpe-codes.tgt < finaldata/train.ta > finaldata/BPE2/train.tgt
+
+**** BPE should Not be applied for target Test.
+
+
+4. Finally creating Vocab and converting data in torch tensor for training.
+
+python preprocess.py -train_src finaldata/BPE/train.src -train_tgt finaldata/BPE/train.tgt -valid_src finaldata/BPE/val.src -valid_tgt finaldata/BPE/val.tgt -save_data finaldata/BPE/enta
+
+
+
+

@@ -1,0 +1,24 @@
+1. For test First translate according to best model (A model with high validation accuracy and low perplexity)
+
+a.) if GPU 
+
+CUDA_VISIBLE_DEVICE=0 python translate.py -model finaldata/enta_step_90000.pt -src finaldata/bpe.test.en -output finaldata/pred.txt -replace_unk -verbose -beam_size 5 -gpu 0
+
+b.) if not GPU
+
+python translate.py -model finaldata/BPE/new/enta_step_90000.pt -src finaldata/BPE/bpe.test.en -output finaldata/BPE/pred.txt -replace_unk -verbose -beam_size 5
+
+
+
+
+2. after translation change pred.txt to actual word combination 
+
+cat pred.txt | sed -E 's/(@@ )|(@@ ?$)//g' > preddtok.txt
+
+
+
+3. Now using preddtok.txt find the BLEU score for the translation
+
+
+perl tools/multi-bleu.perl finaldata/test.ta < finaldata/BPE/preddtok.txt
+

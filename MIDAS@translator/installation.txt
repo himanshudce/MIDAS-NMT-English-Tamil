@@ -1,0 +1,23 @@
+Installation for the respactive systems accordingly.
+
+1. go to 
+
+http://opennmt.net/OpenNMT-py/main.html#installation
+
+
+
+2. install pytorch according to your system
+ 
+https://pytorch.org/
+
+
+
+3. clone OpenNMT-py
+
+git clone https://github.com/OpenNMT/OpenNMT-py
+
+
+4. go to OpenNMT-py repository and install requirement
+
+pip install -r requirements.txt
+
