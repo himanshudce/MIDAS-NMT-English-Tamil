@@ -2,15 +2,20 @@
 
 This Github project provides dataset and source code for our paper "Neural Machine Translation for English-Tamil" which was accepted in WMT in EMNLP 2018.
 
-This Repository contains parallel corpus of english to tamil Dataset
-=======================
-train - 183451
-test - 2000
-val - 1000
+## This Repository contains parallel corpus of english to tamil Dataset
 
-###### Go to respactive repository for Installation preporcessing training and testing 
+train - 183451\ 
+test - 2000\
+val - 1000\
 
-Kindly cite the below paper if you use our dataset or source code.
+### follow MIDAS@translator repository for Installation,preporcessing,training and testing 
+
+1.installation\
+2.preprocessing\
+3.training\
+4.testing\
+
+### Kindly cite the below paper if you use our dataset or source code.
 
 @inproceedings{choudhary2018neural,
 
