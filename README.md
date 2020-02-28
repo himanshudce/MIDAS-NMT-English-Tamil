@@ -13,7 +13,7 @@ val - 1000
 3.training\
 4.testing
 
-### Kindly cite the below paper if you use our dataset or source code.
+### Kindly cite the below-given paper if you use our dataset or source code.
 
 @inproceedings{choudhary2018neural,
 
