@@ -31,8 +31,8 @@ tools/apply_bpe.py -c finaldata/BPE/bpe-codes.tgt < finaldata/train.ta > finalda
 **** BPE should Not be applied for target Test.
 
 For Pre-Trained BPE use -
-(https://nlp.h-its.org/bpemb/ta/)[https://nlp.h-its.org/bpemb/ta/]
-
+Link - (https://nlp.h-its.org/bpemb/ta/) 
+And apply those embeddings using (https://opennmt.net/OpenNMT-py/FAQ.html) 
 
 
 4. Finally creating Vocab and converting data in torch tensor for training.
